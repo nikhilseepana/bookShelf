@@ -9,17 +9,15 @@ export default function ShowBooks(props) {
       <hr />
       {books.map(book =>
         book.status === header ? (
-          <div>
-            <Book
-              key={book.id}
-              header={header}
-              id={book.id}
-              title={book.title}
-              author={book.author}
-              imageLink={book.link}
-              handleClick={handleClick}
-            />
-          </div>
+          <Book
+            key={book.id}
+            header={header}
+            id={book.id}
+            title={book.title}
+            author={book.author}
+            imageLink={book.link}
+            handleClick={handleClick}
+          />
         ) : null
       )}
     </div>
